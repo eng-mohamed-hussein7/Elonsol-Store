@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELONSOL STORE</title>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="py-5">
+      <div class="container">
+        <div class="title d-flex flex-wrap justify-content-center">
+          <h1 class="text-uppercase shadow p-3">
+            <span class="text-info">E</span>lonsol
+            <span class="text-info">S</span>tore
+          </h1>
+        </div>
+        <div class="row py-3">
+          <div class="col-12">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control border-start-0 border-end-0 border-top-0 rounded-0"
+                id="productName"
+                name="ProductName"
+                placeholder="Product Name"
+              />
+              <label for="productName">Product Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control border-start-0 border-end-0 border-top-0 rounded-0"
+                id="productPrice"
+                name="ProductPrice"
+                placeholder="Product Price"
+              />
+              <label for="productPrice">Product Price</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select
+                class="form-select border-start-0 border-end-0 border-top-0 rounded-0"
+                id="productCategory"
+                aria-label="Floating label select example"
+              >
+                <option selected disabled>Choose Product Category</option>
+              </select>
+              <label for="productCategory">Product Category</label>
+            </div>
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control border-start-0 border-end-0 border-top-0 rounded-0"
+                placeholder="Product Discraption"
+                id="productDiscraption"
+              ></textarea>
+              <label for="productDiscraption">Product Discraption</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                class="form-control border-start-0 border-end-0 border-top-0 rounded-0"
+                type="file"
+                id="productImage"
+              />
+              <label for="productImage" class="form-label"
+                >Default file input example</label
+              >
+            </div>
+            <button class="btn btn-info text-white" id="CreateProductBtn">
+              Add Product
+            </button>
+            <button class="btn btn-warning d-none" id="updateProductBtn">
+              Update Product
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container my-border-top py-4">
+        <div class="mb-4 w-75 mx-auto">
+          <input
+            type="search"
+            class="form-control"
+            id="productSearch"
+            placeholder="Search by product name"
+          />
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4"
+          id="product-container"
+        ></div>
+      </div>
+    </section>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.3/dist/sweetalert2.all.min.js
+"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/helper.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

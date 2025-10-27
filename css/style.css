@@ -1,0 +1,8 @@
+.form-select:focus,
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-info);
+}
+.my-border-top {
+  border-top: 2px dotted #dee2e6;
+}
